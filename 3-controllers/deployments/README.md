@@ -44,6 +44,7 @@ kubectl get deploy mydeploy -o yaml             # detailed object config
 
 kubectl describe deploy <deployment>                # inspect the deployment
 kubectl label deploy <deployment> key=value         # label the deployment
+kubectl get deploy deployment-pod --show-labels      # to show labels
 kubectl scale --replicas=x deploy <deployment>      # Scale up/down deployment
 kubectl expose deploy <deploy> --port=<external> --target-port=<internal> # expose deployment as service & assign port on the cluster
 kubectl delete deploy <deployment>                  # delete deployment & pod under it
