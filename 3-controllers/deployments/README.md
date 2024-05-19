@@ -55,5 +55,6 @@ kubectl rollout status deploy <deployname>       # get status of rollout
 kubectl rollout undo deploy <deployname>         # rollback to the previous revision
 kubectl rollout undo deploy <deployname>  --revision=2     # rollback to a specific revision
 kubectl rollout pause deploy <deployname>        # pause a Deployment before triggering one or more updates
-kubectl rollout resume deploy <deployname>       
+kubectl rollout resume deploy <deployname>
+kubectl rollout restart deployment <deployment_name> -n <namespace>   # to restart deploy    
 ```
